@@ -1,0 +1,38 @@
+options:
+  oidc-metadata-url:
+    type: string
+    default:
+    description: "Metadata url"
+  oidc-client-id:
+    type: string
+    default:
+    description: "client id"
+  oidc-client-secret:
+    type: string
+    default:
+    description: "client secret"
+  oidc-crypto-passphrase:
+    type: string
+    default:
+    description: "crypto passphrase"
+  oidc-remote-user-claim:
+    type: string
+    default:
+    description: ""
+  oidc-http-iss:
+    type: string
+    default:
+    description: ""
+  oidc-ssl-validate-server:
+    type: string
+    default:
+    description: ""
+  oidc-redirect-admin-uri:
+    type: string
+    default:
+    description: ""
+  oidc-redirect-public-uri:
+    type: string
+    default:
+    description: ""
+

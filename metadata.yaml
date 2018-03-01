@@ -1,0 +1,11 @@
+name: charm-keystone-federated
+summary: Charm to support Keystone Federated Backend
+maintainer: OpenStack Charmers <openstack-charmers@lists.ubuntu.com>
+description: |
+  Keystone can integrate with a number of different identity providers in a number of different configurations. This charm subordinate charm adds support to OpenId Connect.
+tags:
+  - openstack identity
+subordinate: true
+provides:
+  federated-backend:
+    interface: keystone-federated-backend
