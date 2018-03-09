@@ -1,4 +1,4 @@
-name: charm-keystone-federated
+name: keystone-federated-backend
 summary: Charm to support Keystone Federated Backend
 maintainer: OpenStack Charmers <openstack-charmers@lists.ubuntu.com>
 description: |
@@ -7,5 +7,15 @@ tags:
   - openstack identity
 subordinate: true
 provides:
-  federated-backend:
+  keystone-federated-backend:
     interface: keystone-federated-backend
+    scope: container
+requires:
+  container:
+    interface: juju-info
+    scope: container
+series:
+  - xenial
+  - bionic
+  - artful
+  - trusty
