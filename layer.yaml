@@ -1,1 +1,7 @@
-includes: ['layer:basic']  # if you use any interfaces, add them here
+repo: git@github.com:vds/layer-charm-keystone-federated.git
+includes: ['layer:basic', 'interface:juju-info', 'interface:keystone-federated-backend']
+options:
+  basic:
+    packages: ['libapache2-mod-auth-openidc']
+    use_venv: True
+    include_system_packages: True
